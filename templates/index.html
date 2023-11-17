@@ -1,43 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Home | SWEETER</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="icon"
-      href="{{ url_for('static', filename='favicon.ico') }}"
-      type="image/x-icon"
-    />
-    <meta property="og:title" content="Sweeter - the sweetest site" />
-    <meta property="og:description" content="mini project for Web Plus" />
-    <meta
-      property="og:image"
-      content="{{ url_for('static', filename='ogimage.jpg') }}"
-    />
+    <head>
 
-    <!-- Bulma CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
-    />
-    <!-- Font Awesome CSS -->
-    <link
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
+        <!-- Webpage Title -->
+        <title>Home | SWEETER</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+        <meta property="og:title" content="스위터 - 세상을 달달하게"/>
+        <meta property="og:description" content="mini project for Web Plus"/>
+        <meta property="og:image" content="{{ url_for('static', filename='ogimg.png') }}"/>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <!-- Bulma CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <!-- Font Awesome CSS -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Stylish&display=swap" rel="stylesheet">
+        <link href="{{ url_for('static', filename='mystyle.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'mystyle.css') }}">
-    <script src="{{ url_for('static', filename = 'myjs.js') }}"></script>
-
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 <script>
     $(document).ready(function(){
         get_posts()
